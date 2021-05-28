@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Casino_Schmirtz_Royale.ViewModels.ViewModelBase" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ViewModelBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Casino_Schmirtz_Royale.ViewModels.AboutViewModel">
+    <Position X="9.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\AboutViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Casino_Schmirtz_Royale.ViewModels.AuthViewModel">
+    <Position X="3.5" Y="3.75" Width="1.5" />
+    <InheritanceLine Type="Casino_Schmirtz_Royale.ViewModels.ViewModelBase" FixedToPoint="true">
+      <Path>
+        <Point X="10" Y="2.191" />
+        <Point X="10" Y="2.566" />
+        <Point X="4.188" Y="2.566" />
+        <Point X="4.188" Y="3.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAQAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>ViewModels\AuthViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Casino_Schmirtz_Royale.ViewModels.DepositViewModel">
+    <Position X="11.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAtAAIAAAACAAAQAAAAAAgAAAAABAAQAAACAAAAAI=</HashCode>
+      <FileName>ViewModels\DepositViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Casino_Schmirtz_Royale.ViewModels.HomeViewModel">
+    <Position X="13.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAgAAAAAAQAQAAAAiAAAIAAAAAAAAAAAAQAwAAAAI=</HashCode>
+      <FileName>ViewModels\HomeViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Casino_Schmirtz_Royale.ViewModels.LoginViewModel">
+    <Position X="15.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAKAAAAAgAAAAAAAAgCAEAA=</HashCode>
+      <FileName>ViewModels\LoginViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Casino_Schmirtz_Royale.ViewModels.MainViewModel">
+    <Position X="7" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAEAAAABAABCAQAAAgAAAAIRAgACFQAA=</HashCode>
+      <FileName>ViewModels\MainViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Casino_Schmirtz_Royale.ViewModels.RegViewModel">
+    <Position X="5.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAIAAhICAAAAAAAAAAAAAEAAAAAAAAAAggAEAE=</HashCode>
+      <FileName>ViewModels\RegViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Casino_Schmirtz_Royale.ViewModels.SettingsViewModel">
+    <Position X="18" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QACAAACCAAAQgAgAABAAAAAAAEAAAAAIEQAKBFEAACQ=</HashCode>
+      <FileName>ViewModels\SettingsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Casino_Schmirtz_Royale.ViewModels.SlotViewModel">
+    <Position X="20" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAIABAAQAAAAAAAAAAIAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>ViewModels\SlotViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

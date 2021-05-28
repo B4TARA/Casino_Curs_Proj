@@ -1,0 +1,29 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Casino_Schmirtz_Royale.ViewModels" xmlns:local1="clr-namespace:Casino_Schmirtz_Royale.Views"
+                    xmlns:admin="clr-namespace:Casino_Schmirtz_Royale.ViewModels.AdminViewModels"
+                    xmlns:adminV="clr-namespace:Casino_Schmirtz_Royale.Views.AdminViews">
+
+    <DataTemplate DataType="{x:Type local:SlotViewModel}">
+        <local1:SlotView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type local:HomeViewModel}">
+        <local1:HomeView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type local:LoginViewModel}">
+        <local1:LoginView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type local:RegViewModel}">
+        <local1:RegView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type local:SettingsViewModel}">
+        <local1:SettingsView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type local:AboutViewModel}">
+        <local1:AboutView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type local:DepositViewModel}">
+        <local1:DepositView/>
+    </DataTemplate>
+
+</ResourceDictionary>

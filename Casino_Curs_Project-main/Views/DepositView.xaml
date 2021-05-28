@@ -1,0 +1,160 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Casino_Schmirtz_Royale.Views"
+             xmlns:ViewModels="clr-namespace:Casino_Schmirtz_Royale.ViewModels" x:Class="Casino_Schmirtz_Royale.Views.DepositView"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    
+    <UserControl.DataContext>
+        <ViewModels:DepositViewModel/>
+    </UserControl.DataContext>
+
+    <UserControl.Background>
+        <ImageBrush ImageSource="Assets/background.png" Stretch="UniformToFill"/>
+    </UserControl.Background>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="68*"/>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="19*"/>
+            <RowDefinition Height="207*"/>
+            <RowDefinition Height="41*"/>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="44*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="170*"/>
+            <ColumnDefinition Width="34*"/>
+            <ColumnDefinition Width="196*"/>
+            <ColumnDefinition Width="198*"/>
+            <ColumnDefinition Width="34*"/>
+            <ColumnDefinition Width="170*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="3" Grid.ColumnSpan="5" Margin="0.4,0,169,0.2" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="49*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="50*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="90*"/>
+                <ColumnDefinition Width="90*"/>
+                <ColumnDefinition Width="90*"/>
+                <ColumnDefinition Width="90*"/>
+                <ColumnDefinition Width="50*"/>
+            </Grid.ColumnDefinitions>
+            <Border CornerRadius="9" Grid.ColumnSpan="6" Margin="0,0,-1.2,-2.8" Grid.RowSpan="7">
+                <Border.Background>
+                    <ImageBrush ImageSource="Card.png" Stretch="UniformToFill"/>
+                </Border.Background>
+            </Border>
+            
+            <TextBox Grid.Row="1" Grid.Column="1" BorderThickness="2" materialDesign:HintAssist.Hint="XXXX" TextAlignment="Center" HorizontalContentAlignment="Center" FontSize="15" FontWeight="DemiBold" Opacity="0.75">
+            <TextBox.Text>
+                <Binding Path="Number1">
+                    <Binding.ValidationRules>
+                        <ExceptionValidationRule />
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+            </TextBox>
+        
+            <TextBox Grid.Row="1" Grid.Column="2" BorderThickness="2" materialDesign:HintAssist.Hint="XXXX" TextAlignment="Center" HorizontalContentAlignment="Center" FontSize="15" FontWeight="DemiBold" Opacity="0.75">
+            <TextBox.Text>
+                    <Binding Path="Number2">
+                    <Binding.ValidationRules>
+                        <ExceptionValidationRule />
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+            </TextBox>
+        
+            <TextBox Grid.Row="1" Grid.Column="3" BorderThickness="2" materialDesign:HintAssist.Hint="XXXX" TextAlignment="Center" HorizontalContentAlignment="Center" FontSize="15" FontWeight="DemiBold" Opacity="0.75">
+            <TextBox.Text>
+                    <Binding Path="Number3">
+                    <Binding.ValidationRules>
+                        <ExceptionValidationRule />
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+            </TextBox>
+        
+            <TextBox Grid.Row="1" Grid.Column="4" BorderThickness="2" materialDesign:HintAssist.Hint="XXXX" TextAlignment="Center" HorizontalContentAlignment="Center" FontSize="15" FontWeight="DemiBold" Opacity="0.75">
+            <TextBox.Text>
+                    <Binding Path="Number4">
+                    <Binding.ValidationRules>
+                        <ExceptionValidationRule />
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+            </TextBox>
+
+            
+            <TextBox Grid.Row="3" Grid.Column="4" BorderThickness="2" materialDesign:HintAssist.Hint="CVV" TextAlignment="Center" HorizontalContentAlignment="Center" FontSize="15" FontWeight="DemiBold" Opacity="0.75">
+            <TextBox.Text>
+                <Binding Path="Cvv">
+                    <Binding.ValidationRules>
+                        <ExceptionValidationRule />
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+            </TextBox>
+            
+            <TextBox Grid.Row="3" Grid.Column="2" BorderThickness="2" materialDesign:HintAssist.Hint="YY" TextAlignment="Center" HorizontalContentAlignment="Center" FontSize="15" FontWeight="DemiBold" Opacity="0.75">
+            <TextBox.Text>
+                <Binding Path="Date2">
+                    <Binding.ValidationRules>
+                        <ExceptionValidationRule />
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+            </TextBox>
+    
+            <TextBox Grid.Row="3" Grid.Column="1" BorderThickness="2" materialDesign:HintAssist.Hint="MM" TextAlignment="Center" HorizontalContentAlignment="Center" FontSize="15" FontWeight="DemiBold" Opacity="0.75">
+            <TextBox.Text>
+                <Binding Path="Date1">
+                    <Binding.ValidationRules>
+                        <ExceptionValidationRule />
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+            </TextBox>
+
+            <TextBox Grid.Row="5" Grid.Column="1" BorderThickness="2" materialDesign:HintAssist.Hint="CARD HOLDER" TextAlignment="Center" HorizontalContentAlignment="Center" FontSize="15" FontWeight="DemiBold" Grid.ColumnSpan="3" Opacity="0.75">
+            <TextBox.Text>
+                <Binding Path="Holder">
+                    <Binding.ValidationRules>
+                        <ExceptionValidationRule />
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+            </TextBox>
+        
+        </Grid>
+        <Label Content="Unique gaming id: 2" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="2" HorizontalContentAlignment="Center" FontSize="20" FontWeight="DemiBold" Foreground="White" Opacity="0.75"/>
+        <TextBox HorizontalContentAlignment="Center" materialDesign:HintAssist.Hint="Enter the value" Grid.Column="2" Grid.Row="5" FontSize="20" VerticalContentAlignment="Top" Background="White" Opacity="0.5" FontWeight="DemiBold">
+            <TextBox.Text>
+                <Binding Path="Deposit">
+                    <Binding.ValidationRules>
+                        <ExceptionValidationRule />
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+        <Button Content="Top up" Grid.Column="3" Grid.Row="5" Command="{Binding TopUp}" />
+        <Button Content="Назад" Command="{Binding BackCommand}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Margin="95,36,0,0"/>
+
+
+
+    </Grid>
+</UserControl>

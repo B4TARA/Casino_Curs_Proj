@@ -1,0 +1,156 @@
+﻿<UserControl x:Class="Casino_Schmirtz_Royale.Views.SettingsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:Casino_Schmirtz_Royale.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.Background>
+        <ImageBrush ImageSource="Assets/background.png" Stretch="UniformToFill"></ImageBrush>
+    </UserControl.Background>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="178*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="178*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="177*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="115*"/>
+            <ColumnDefinition Width="50*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+
+
+        <Label Content="Change Login-->" Grid.Row="1" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Harrington" FontWeight="DemiBold" Grid.Column="1"/>
+        <Border Grid.Column="3" Grid.Row="1" Opacity="0.5" CornerRadius="10" Background="White">
+            <TextBox materialDesign:HintAssist.Hint="Input old login" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14">
+                <TextBox.Text>
+                    <Binding Path="OldLogin">
+                        <Binding.ValidationRules>
+                            <ExceptionValidationRule />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="1" Opacity="0.5" CornerRadius="10" Background="White">
+            <TextBox materialDesign:HintAssist.Hint="Input new login" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14">
+                <TextBox.Text>
+                    <Binding Path="NewLogin">
+                        <Binding.ValidationRules>
+                            <ExceptionValidationRule />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+        </Border>
+        <Button Command="{Binding ChangeLogin}" Content="Change" Grid.Column="7" Grid.Row="1"/>
+
+
+        <Label Content="Change e-mail-->" Grid.Row="3" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Harrington" FontWeight="DemiBold" Grid.Column="1"/>
+        <Border Grid.Column="3" Grid.Row="3" Opacity="0.5" CornerRadius="10" Background="White">
+            <TextBox materialDesign:HintAssist.Hint="Input old e-mail" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14">
+                <TextBox.Text>
+                    <Binding Path="OldMail">
+                        <Binding.ValidationRules>
+                            <ExceptionValidationRule />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="3" Opacity="0.5" CornerRadius="10" Background="White">
+            <TextBox materialDesign:HintAssist.Hint="Input new e-mail" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14">
+                <TextBox.Text>
+                    <Binding Path="NewMail">
+                        <Binding.ValidationRules>
+                            <ExceptionValidationRule />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+        </Border>
+        <Button Command="{Binding ChangeMail}" Content="Change" Grid.Column="7" Grid.Row="3"/>
+
+
+        <Label Content="Change name-->" Grid.Row="5" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Harrington" FontWeight="DemiBold" Grid.Column="1"/>
+        <Border Grid.Column="3" Grid.Row="5" Opacity="0.5" CornerRadius="10" Background="White">
+            <TextBox materialDesign:HintAssist.Hint="Input old name" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14">
+                <TextBox.Text>
+                    <Binding Path="OldName">
+                        <Binding.ValidationRules>
+                            <ExceptionValidationRule />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="5" Opacity="0.5" CornerRadius="10" Background="White">
+            <TextBox materialDesign:HintAssist.Hint="Input new name" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14">
+                <TextBox.Text>
+                    <Binding Path="NewName">
+                        <Binding.ValidationRules>
+                            <ExceptionValidationRule />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+        </Border>
+        <Button Command="{Binding ChangeName}" Content="Change" Grid.Column="7" Grid.Row="5"/>
+
+
+        <Label Content="Change surname-->" Grid.Row="7" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Harrington" FontWeight="DemiBold" Grid.Column="1"/>
+        <Border Grid.Column="3" Grid.Row="7" Opacity="0.5" CornerRadius="10" Background="White">
+            <TextBox materialDesign:HintAssist.Hint="Input old surname" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14">
+                <TextBox.Text>
+                    <Binding Path="OldSurname">
+                        <Binding.ValidationRules>
+                            <ExceptionValidationRule />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="7" Opacity="0.5" CornerRadius="10" Background="White">
+            <TextBox materialDesign:HintAssist.Hint="Input new surname" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14">
+                <TextBox.Text>
+                    <Binding Path="NewSurname">
+                        <Binding.ValidationRules>
+                            <ExceptionValidationRule />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+        </Border>
+        <Button Command="{Binding ChangeSurname}" Content="Change" Grid.Column="7" Grid.Row="7"/>
+
+
+        <Label Content="Change password-->" Grid.Row="9" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Harrington" FontWeight="DemiBold" Grid.Column="1"/>
+        <Border Grid.Column="3" Grid.Row="9" Opacity="0.5" CornerRadius="10" Background="White">
+            <PasswordBox x:Name="oldpassword" PasswordChanged="PasswordBox_OldPasswordChanged" materialDesign:HintAssist.Hint="Input old password" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14"/>
+        </Border>
+        <Border Grid.Column="5" Grid.Row="9" Opacity="0.5" CornerRadius="10" Background="White">
+            <PasswordBox x:Name="newpassword" PasswordChanged="PasswordBox_NewPasswordChanged" materialDesign:HintAssist.Hint="Input new password" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14"/>
+        </Border>
+        <Button Command="{Binding ChangePassword}" Content="Change" Grid.Column="7" Grid.Row="9"/>
+
+    </Grid>
+</UserControl>
