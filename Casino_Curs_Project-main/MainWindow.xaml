@@ -45,7 +45,8 @@
             <Grid.Background>
                 <ImageBrush ImageSource="Assets/background2.png" Stretch="UniformToFill"></ImageBrush>
             </Grid.Background>
-            
+
+
             <!--
             <Grid Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="1" Opacity="0.85">
                 <materialDesign:Card Margin="5" UniformCornerRadius="5" materialDesign:ShadowAssist.ShadowDepth="Depth4">
@@ -64,7 +65,7 @@
                 </materialDesign:Card>
             </Grid>
             -->
-            
+
             <StackPanel Grid.ColumnSpan="5" Margin="0,0,-0.295,0.4" Grid.RowSpan="5">
                 <RadioButton x:Name="homeRadio" Content="Home" FontSize="30" Height="100" Style="{StaticResource MenuButtonThemeWhite}" Command="{Binding ChangeCommand}" FontFamily="Harrington" FontWeight="Bold" Checked="searchRadio_Checked"/>
                 <RadioButton x:Name="slot_machineRadio" Content="Slot machine" FontSize="30" Height="100" Style="{StaticResource MenuButtonThemeWhite}" Command="{Binding ChangeCommand}" FontFamily="Harrington" FontWeight="Bold" Checked="searchRadio_Checked" />

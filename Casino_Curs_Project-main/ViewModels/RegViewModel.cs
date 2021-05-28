@@ -64,15 +64,32 @@ namespace Casino_Schmirtz_Royale.ViewModels
                          {
                              MessageBox.Show("Данные не могут быть пустыми или начинаться с пробела!");
                          }
-                         else if( !Regex.IsMatch(login, "^([A-Za-z0-9]){5,20}$") ||
-                                  !Regex.IsMatch(password, "^([A-Za-z0-9]){8,20}$") ||
-                                  !Regex.IsMatch(firstname, "^[A-Za-z0-9]){5,20}$") ||
-                                  !Regex.IsMatch(lastname, "^[A-Za-z0-9]){5,20}$") ||
-                                  !Regex.IsMatch(mail, "^[A-Za-z0-9]{5,15}@[a-z]{3,6}\\.[a-z]{3}$")
-                                 )
+
+                         else if (!Regex.IsMatch(login, "^[A-Za-z0-9]+$"))
                          {
                              MessageBox.Show("Данные содержат недопустимые знаки!");
                          }
+
+                         else if(!Regex.IsMatch(password, "^[A-Za-z0-9]+$"))
+                         {
+                             MessageBox.Show("Данные содержат недопустимые знаки!");
+                         }
+
+                         else if (!Regex.IsMatch(firstname, "^[A-Za-z0-9]+$"))
+                         {
+                             MessageBox.Show("Данные содержат недопустимые знаки!");
+                         }
+
+                         else if (!Regex.IsMatch(lastname, "^[A-Za-z0-9]+$"))
+                         {
+                             MessageBox.Show("Данные содержат недопустимые знаки!");
+                         }
+
+                         else if (!Regex.IsMatch(mail, "^([a-zA-z0-9_-]+\\.)*[a-z0-9_-]+@[a-z0-9_-]+(\\.[a-z0-9_-]+)*\\.[a-z]{2,6}$"))
+                         {
+                             MessageBox.Show("Данные содержат недопустимые знаки!");
+                         }
+
                          else
                          {
                              User user = new User();

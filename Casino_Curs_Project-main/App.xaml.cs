@@ -14,3 +14,23 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Casino_Schmirtz_Royale.Localization;
+namespace Casino_Schmirtz_Royale
+{
+    /// <summary>
+    /// Логика взаимодействия для App.xaml
+    /// </summary>
+    public partial class App : Application
+    {
+        public static CasinoDbContext db = new CasinoDbContext();
+        private static Language language;
+        public static Language Language
+        {
+            get => language ?? (language = new Language());
+        }
+        public App()
+        {
+            InitializeComponent();
+            App.Language.Name = Casino_Schmirtz_Royale.Properties.Settings.Default.DefaultLanguage;
+        }
+    }
+}
